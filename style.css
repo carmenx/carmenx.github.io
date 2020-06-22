@@ -1,457 +1,150 @@
 
 
 body {
-    margin: 100vw;
-    height: 100vh;
-    background-color: #b5d4cc;
-    overflow: hidden;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
 }
 
 #background {
-    z-index: -99;
-    position: absolute;
-    height: 2500vh;
-    width: 100vw;
+  z-index: -99;
+  position: absolute;
+  background-color: #b5d4cc;
+  height: 2500vh;
+  width: 100vw;
+}
+
+/* Style the navigation menu */
+.navbar {
+  width: 100%;
+  background-color: white;
+  overflow: auto;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: #545454;
+  text-decoration: none;
+  font-size: 17px;
+  width: 22%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+  background-color:#b5d4cc;
+}
+
+/* Style the current/active link */
+.navbar a.active {
+  background-color: #b5d4cc;
+  color: white;
+  font-size: 17px;
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
 }
 
 #white {
-    color: white;
+  color: white;
 }
 
 #mediumgreen {
-    color: #48ab94  ;
+  color: #48ab94  ;
 }
 
 #brightgreen {
-    color: #7ccccc;
+  color: #7ccccc;
 }
 
 #grey {
-    color: #54575a;
+  color: #54575a;
 }
-
-#yellow {
-    color: #f9d799 ;
-}
-  .box {
-  position: fixed;
-  top: 0px;
-  transform: rotate(80deg); 
-  right: 0px;
-  z-index: 0px;
-}
-
-
-#cmd-head {
-    width:100vw;
-    height:102vh;
-    position:relative;
-  }
-  #cmd-head-in {
-    width:100%;
-    height:100vh;
-    position:absolute;
-    top:0px; left:0px;
-  }
-  #cmd-menu {
-    position:absolute;
-    top:92vh; left:5vw;
-    padding-left:10px;
-    z-index:10;
-  }
-  #cmd-menu a {
-    margin-right:5vw;
-    text-decoration:none;
-    color:#333;
-    text-transform:uppercase;
-    font-family:'Quicksand',Arial;
-    font-weight:600;
-    font-size:1.25em;
-    letter-spacing:3px;
-  }
-  #cmd-menu .chome:hover {
-    background:var(--pastelblue);
-  }
-  #cmd-menu .cabout:hover {
-    background:var(--pastelpurp);
-  }
-  #cmd-menu .ccontact:hover {
-    background:var(--pastelpink);
-  }
-  #cmd-title {
-    position:absolute;
-    bottom:8vh; left:5vw;
-    font-family:'Josefin Sans',Arial;
-    font-size:9vw;
-    font-weight:700;
-    line-height:100%;
-    color:#333;
-  }
-  #cmd-desc {
-    width:30vw;
-    position:absolute;
-    bottom:55vh;
-    right:12vw;
-    font-family:'Josefin Sans',Arial;
-    font-weight:900;
-    text-transform:uppercase;
-    font-size:15px;
-    text-align:justify;
-    letter-spacing:2px;
-    color:#333;
-    line-height:20px;
-  }
-  
-  .box {
-  position: fixed;
-  top: -1100px;
-  transform: rotate(80deg); 
-  right: -20vw;
-  z-index:-10;
+.box {
+position: fixed;
+top: 0px;
+transform: rotate(80deg); 
+right: 0px;
+z-index: 0px;
 }
 
 .wave {
-  position: absolute;
-  opacity: .4;
-  width: 2000px;
-  height: 1800px;
-  margin-left: -150px;
-  margin-top: -250px;
-  border-radius: 43%;
+position: absolute;
+opacity: .4;
+width: 200px;
+height: 180px;
+margin-left: 100px;
+margin-top: 500px;
+border-radius: 43%;
 }
 @keyframes rotate {
-  from { transform: rotate(0deg); }
-  from { transform: rotate(360deg); }
+from { transform: rotate(0deg); }
+from { transform: rotate(360deg); }
 }
 .wave.-one {
-  animation: rotate 12s infinite linear;
-  opacity: .2;
-  background: #EFB1B1;
+animation: rotate 12s infinite linear;
+opacity: .2;
+background: #EFB1B1;
 }
 
 .wave.-two {
-  animation: rotate 5s infinite linear;
-  opacity: .15;
-  background: #9576B8;
+animation: rotate 5s infinite linear;
+opacity: .15;
+background: #9576B8;
 }
 
 .wave.-three {
-  animation: rotate 8s infinite linear;
-  background-color: #BAD7F0;
+animation: rotate 8s infinite linear;
+background-color: #BAD7F0;
 }
 
 #wrapper {
-  width:100vw;
-  z-index:10;
-}
-
-.cmd-c {
-  width:100%;
-  height:100vh;
-  position:relative;
-}
-.solidbg {
-  background:rgba(250,250,250,0.75);
-}
-.cmd-cleft {
-  width:40vw;
-  height:100%;
-  position:absolute;
-  top:0px; left:10vw;
-  display:flex;
-  align-items:center;
-  align-content:center;
-  flex-wrap:wrap;
-}
-.cmd-c h1 {
-  font-family:'Josefin Sans',Arial;
-  font-size:5vw;
-  color:#333;
-  margin:10px 0px;
-  width:100%;
-}
-.cmd-c h3 {
-  font-size:3vw;
-  font-family:'Josefin Sans',Arial;
-  color:#333;
-  margin:10px 0px;
-  width:100%;
-}
-.cmd-c p {
-  font-family:'Muli',Arial;
-  font-weight:500;
-  font-size:18px;
-  color:#333;
-  line-height:26px;
-  text-align:justify;
-  margin:10px 0px;
-}
-.cmd-cright {
-  width:40vw;
-  height:100%;
-  position:absolute;
-  top:0px; left:55vw;
-  display:flex;
-  align-items:center;
-  align-content:center;
-  flex-wrap:wrap;
-}
-.cmd-imggrid {
-  margin:0px auto;
-  max-width:35vw;
-  display:flex;
-  flex-wrap:wrap;
-  align-items:stretch;
-  align-content:stretch;
-  justify-items:space-around;
-  justify-content:center;
-}
-.cmd-imggrid img {
-  max-width:35vw;
-  margin:5px;
-  flex-grow:1;
-  overflow:hidden;
-  border-radius:5px;
-}
-
-.cmd-avatar {
-  position:relative;
-  max-width:35vw;
-  display:flex;
-  flex-wrap:wrap;
-  align-items:center;
-  align-content:center;
-  justify-items:center;
-  justify-content:center;
-}
-.cmd-avatar img {
-  margin:20px;
-  border:10px solid #fafafa;
-  border-radius:100%;
-  max-width:200px;
-}
-.cmd-avatar img:hover {
-  transform:scale(1.05);
-  transition:all 0.5s ease-in-out;
-}
-
-.pshad {
-  text-shadow:3px 3px 0px var(--pastelgreen);
-}
-.cmdbreak {
-  width:100px;
-  height:8px;
-  border:none;
-  margin:15px 0px;
-  margin-left:0px;
-  background:var(--blue);
-}
-
-.bpurp {
-  background:var(--purple);
-}
-.bpink {
-  background:var(--pink);
-}
-.cmd-c button {
-  padding:24px 20px 20px 20px;
-  margin:10px 0px;
-  width:100%;
-  border:none;
-  border-radius:100px;
-  text-align:center;
-  background:var(--pink);
-  font-family:'Josefin Sans',Arial;
-  font-weight:700;
-  color:#fafafa;
-  text-transform:uppercase;
-  letter-spacing:2px;
-  font-size:25px;
-  line-height:100%;
-  box-shadow:2px 2px 5px rgba(0,0,0,0.1);
-}
-.cmd-c button:nth-child(2) {
-  background:var(--blue);
-}
-.cmd-c button:nth-child(3) {
-  background:var(--green);
-}
-.cmd-c button:hover {
-  background:var(--purple);
-}
-
-.cmd-vid {
-  margin-left:-5%;
-  width:100%;
-  height:350px;
-}
-
-.end {
-  padding:5vh 0px;
-  font-family:'Josefin Sans',Arial;
-}
-.end h1 {
-  font-size:3vw;
-}
-.end h1 a {
-  color:#333;
-  text-decoration-color:var(--pink);
-}
-.end h1 a:hover {
-  color:var(--purple);
-}
- 
-footer {
-  font-family:'Josefin Sans',Arial;
-  padding:5vh 5vw;
-  color:#666;
-  background:#fafafa;
-  text-align:center;
+width:100vw;
+z-index:10;
 }
 
 
-
-@media only screen and (max-width: 800px) {
-  #cmd-title {
-    position:absolute;
-    bottom:8vh; left:6vw;
-    font-family:'Josefin Sans',Arial;
-    font-size:9vw;
-    font-weight:700;
-    line-height:100%;
-    color:#333;
-  }
-  #cmd-desc {
-    width:70vw;
-    position:absolute;
-    top:15vh;
-    right:12vw;
-    font-family:'Josefin Sans',Arial;
-    font-weight:900;
-    text-transform:uppercase;
-    font-size:12px;
-    text-align:right;
-    letter-spacing:2px;
-    color:#333;
-    line-height:20px;
-  }
-  .box {
-  position: fixed;
-  top: -1350px;
-  transform: rotate(80deg); 
-  right: -20vw;
-  z-index:-10;
-}
-  .cmd-cleft {
-    width:100vw;
-    height:auto;
-    left:0;
-    padding:3vh 0px;
-    position:relative;
-    margin:0px auto;
-    display:flex;
-    flex-wrap:wrap;
-  }
-  .cmd-c h1 {
-    text-align:center;
-    left:0;
-  }
-  .cmd-c p{
-    width:80%;
-    padding:15px 10%;
-    margin:0px auto;
-  }
-  .cmd-c hr {
-    margin:10px auto;
-  }
-  .cmd-c {
-    height:auto;
-    display:block;
-    text-align:center;
-    padding:5vh 0px;
-  }
-  .cmd-cright {
-    width:100vw;
-    height:auto;
-    position:relative;
-    margin:0px auto;
-    left:0px;
-  }
-  
-  .cmd-imggrid {
-    position:relative;
-    max-width:90vw;
-    display:flex;
-    flex-wrap:wrap;
-    align-items:stretch;
-    align-content:stretch;
-    justify-items:space-around;
-    justify-content:center;
-  }
-  .cmd-imggrid img {
-    max-width:55vw;
-    margin:5px;
-    overflow:hidden;
-    border-radius:5px;
-    flex-grow:1;
-  }
-  .cmd-avatar {
-    position:relative;
-    left:-30px;
-    margin:0px auto;
-    max-width:90vw;
-    display:flex;
-    flex-wrap:wrap;
-    align-items:center;
-    align-content:center;
-    justify-items:center;
-    justify-content:center;
-  }
-  .cmd-vid {
-    width:80%;
-    margin:0px auto;
-    height:300px;
-  }
-  
-  .cmd-c button {
-    width:80%;
-    margin:5px auto;
-    box-shadow:none;
-    font-size:20px;
-  }
-}
 /*
 @keyframes rotate {
-    0% {
-      transform: perspective(500px) rotateZ(20deg) rotateX(-40deg) rotateY(0);
-    }
-    100% {
-      transform: perspective(500px) rotateZ(20deg) rotateX(-40deg) rotateY(-360deg);
-    }
+  0% {
+    transform: perspective(500px) rotateZ(20deg) rotateX(-40deg) rotateY(0);
   }
+  100% {
+    transform: perspective(500px) rotateZ(20deg) rotateX(-40deg) rotateY(-360deg);
+  }
+}
 */
 #names {
-    position: absolute;
-    bottom: 2em;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
+  position: absolute;
+  bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
 a {
-    color:#fff;
-    font-family: Lato;
-    text-decoration: none;
+  color:#fff;
+  font-family: Lato;
+  text-decoration: none;
 }
 
 ul {
-    padding: 0;
-    list-style-type: none;
-    text-decoration: none;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
 }
 
 li {
-    padding: 0 1em;
-    display: inline-block
+  padding: 0 1em;
+  display: inline-block
