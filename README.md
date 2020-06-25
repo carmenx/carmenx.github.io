@@ -36,3 +36,4 @@ how do i switch branches?
 git checkout NAME-OF-BRANCH
   
   revert 
+do <hash> --__ HEAD
