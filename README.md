@@ -45,5 +45,29 @@ git push -f
 =f = force - allows you to overwrite the remote stuff with what you have locally even with out of sync
 
 which they are since you threw garbage away 
+
+do ~ or ^
+
+tells you to go back
+
+when you merge
+A
+ /  \
+B  C
+ \  /
+  D
+  
+  branch A
+  branched off it
+  did commit B on one branch and commit C on another
+  merged them them back together to D
+  
+  using the tree
+  A^0 = A
+  A^1 = A^ = B
+  A^2 = C
+  & is for selecting which parent commit you  want 
+  
+  don't necessarily need to understand this to use git
   
   figure out design - sketching on paper!
