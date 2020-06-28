@@ -36,6 +36,14 @@ how do i switch branches?
 git checkout NAME-OF-BRANCH
   
   revert 
-do <hash> --__ HEAD
+` git reset --hard HEAD^
+
+why is the ^ important 
+
+git push -f 
+
+=f = force - allows you to overwrite the remote stuff with what you have locally even with out of sync
+
+which they are since you threw garbage away 
   
   figure out design - sketching on paper!
