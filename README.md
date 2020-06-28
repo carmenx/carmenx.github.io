@@ -37,3 +37,5 @@ git checkout NAME-OF-BRANCH
   
   revert 
 do <hash> --__ HEAD
+  
+  figure out design - sketching on paper!
