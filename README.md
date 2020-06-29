@@ -24,6 +24,7 @@ double check to see what git is keeping track of by doing git status
 push those changes up to github git push origin NAME-OF-BRANCH
 go to github and make a pull request!
 merge it into master
+
 common pitfalls
 help! what do i do if my git says "failed to push some refs to origin"
 you wanna pull your changes and do git pull origin master
@@ -70,4 +71,4 @@ B  C
   
   don't necessarily need to understand this to use git
   
-  figure out design - sketching on paper!
+  figure out design - sketching on paper! - what colours to use
