@@ -3,7 +3,7 @@ personal website woop woop
 
 designed with HTML / CSS / Javascript
 
-| under construction |
+| under construction for a while|
 
 background - floating bubbles / gradients 
 Pages for about me / contact me / education / experience / volunteer / 
