@@ -3,7 +3,7 @@ personal website woop woop
 
 designed with HTML / CSS / Javascript
 
-| under construction for a while| deadline: august 2020
+| under construction for a while| deadline: august 2020 ish
 
 background - floating bubbles / gradients 
 Pages for about me / contact me / education / experience / volunteer / 
