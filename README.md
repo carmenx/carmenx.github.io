@@ -1,4 +1,4 @@
-# [Website Link](https://carmenx.github.io/ "Carmen's website")
+# [Website](https://carmenx.github.io/ "Carmen's website")
 personal website woop woop
 
 designed with HTML / CSS / Javascript
