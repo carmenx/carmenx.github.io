@@ -14,7 +14,7 @@ add links to navigation bar
 remember to write content for website - include things like Nook / Udemy / Coursea 
 
 tabs vs links to new pages - figure out what would look better - implement javascript so you can be able to toggle between tabs and to learn some stuff
-
+add cards and do everything in vs code
 
 git workflow
 (first time setup) pull the repository git clone https://github.com/dryu99/infinite-animal-crossing-lofi.git
