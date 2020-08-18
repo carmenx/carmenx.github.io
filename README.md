@@ -2,6 +2,9 @@
 personal website 
 will this ever get done?? who knows
 
+colour scheme 
+#feb5cb
+
 designed with HTML / CSS / Javascript
 
 | under construction for a while| deadline: august 2020 ish
